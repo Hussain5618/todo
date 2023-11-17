@@ -14,8 +14,8 @@
 
     <div class="items-container">
         @for(item of filteredList;track item.id;let idx=$index;){
-        <div class="p-2 border-gray-100 border-2  flex justify-between border-opacity-30">
-            <div id="text-content" class=" text-white stroke-blue-200  my-auto font-semibold text-lg px-2 "
+        <div class="p-2 dark:border-gray-100 border-slate-400 border-2  flex justify-between border-opacity-30">
+            <div id="text-content" class=" dark:text-white stroke-blue-200  my-auto font-semibold text-lg px-2 "
                 [ngClass]="{'line-through':item.isDone}">
                 {{ item.text}}
             </div>
